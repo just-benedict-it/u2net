@@ -8,7 +8,8 @@ args = parser.parse_args()
 
 path = args.image_path
 
-names = glob.glob(path + '/*.jpg')
+# names = glob.glob(path + '/*.jpg')
+names = glob.glob(path + '/*')
 
 for idx, name in enumerate(names):
   dst = path + '/' + str(idx) + '.jpg'
